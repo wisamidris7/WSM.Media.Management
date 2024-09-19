@@ -99,4 +99,8 @@ public class ExampleFileRequest
 }
 ```
 
+### 5. Don't forgot to create App_Data folder and follow the sample project for more details
+
+```mkdir App_Data```
+
 This setup allows you to upload media files, generate URLs, and store them using EF Core.
