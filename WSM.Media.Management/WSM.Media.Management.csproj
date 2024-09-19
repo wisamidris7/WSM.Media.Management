@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PublisherName>wisamidris7</PublisherName>
+		<RepositoryUrl>https://github.com/wisamidris7/WSM.Media.Management</RepositoryUrl>
+		<Keyword>ImageManagement, MediaLibrary, ASP.NET Core, EF Core</Keyword>
+		<Description>A simple library for manages images or media in aspnetcore and efcore</Description>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+	  <PackageReference Include="SixLabors.ImageSharp" Version="3.1.5" />
+	</ItemGroup>
+</Project>
