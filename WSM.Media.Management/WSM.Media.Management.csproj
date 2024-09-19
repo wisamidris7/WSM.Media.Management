@@ -9,9 +9,23 @@
 		<Keyword>ImageManagement, MediaLibrary, ASP.NET Core, EF Core</Keyword>
 		<Description>A simple library for manages images or media in aspnetcore and efcore</Description>
 		<Version>1.0.0</Version>
+		<Title>WSM Media Manager</Title>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
