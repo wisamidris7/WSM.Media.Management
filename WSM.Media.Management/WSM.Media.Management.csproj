@@ -8,7 +8,7 @@
 		<RepositoryUrl>https://github.com/wisamidris7/WSM.Media.Management</RepositoryUrl>
 		<Keyword>ImageManagement, MediaLibrary, ASP.NET Core, EF Core</Keyword>
 		<Description>A simple library for manages images or media in aspnetcore and efcore</Description>
-		<Version>1.0.0</Version>
+		<Version>1.0.2</Version>
 		<Title>WSM Media Manager</Title>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>

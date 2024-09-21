@@ -10,5 +10,5 @@ namespace WSM.Media.Management.Db;
 public interface IMediaDbContext
 {
     Task<int> SaveChangesAsync(CancellationToken cancellationToken=default);
-    DbSet<MediaFile> MediaFiles { get; set; }
+    DbSet<MediaFile> MediaFiles { get; }
 }
