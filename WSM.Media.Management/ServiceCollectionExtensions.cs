@@ -16,6 +16,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddScoped<MediaMiddleware>();
         services.AddScoped<FileManager>();
+        services.AddScoped<SampleFileCreator>();
         services.AddScoped<IMediaDbContext>(e => e.GetRequiredService<TDbContext>());
         return services;
     }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using WSM.Media.Management.Models;
 
 namespace WSM.Media.Management.Media;
-public class SampleFileCreator
+public class SampleFileCreator(FileManager fileManager)
 {
-    public async Task<Guid?> CreateSample<T>(FileManager fileManager, string fileName)
+    public async Task<Guid?> CreateSample<T>(string fileName)
     {
         return await fileManager.UploadFileAsync<T>(new()
         {

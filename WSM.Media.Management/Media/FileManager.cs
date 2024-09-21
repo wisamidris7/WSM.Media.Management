@@ -24,6 +24,21 @@ public class FileManager(IMediaDbContext dbContext)
         var mediaFile = await dbContext.MediaFiles.FirstOrDefaultAsync(e => e.Id == mediaId);
         return GlobalThumbUrl.Replace("{fileName}", mediaFile?.FileName ?? "not-found.png");
     }
+    public string GetUrl(Guid? mediaId)
+    {
+        var mediaFile = dbContext.MediaFiles.FirstOrDefault(e => e.Id == mediaId);
+        return GlobalUrl.Replace("{fileName}", mediaFile?.FileName ?? "not-found.png");
+    }
+    public string GetStreamUrl(Guid? mediaId)
+    {
+        var mediaFile = dbContext.MediaFiles.FirstOrDefault(e => e.Id == mediaId);
+        return GlobalStreamUrl.Replace("{fileName}", mediaFile?.FileName ?? "not-found.png");
+    }
+    public string GetThumbUrl(Guid? mediaId)
+    {
+        var mediaFile = dbContext.MediaFiles.FirstOrDefault(e => e.Id == mediaId);
+        return GlobalThumbUrl.Replace("{fileName}", mediaFile?.FileName ?? "not-found.png");
+    }
     public async Task<Guid?> UploadFileAsync<T>(FileRequest fileRequest)
     {
         var dirtyMediaFile = false;
